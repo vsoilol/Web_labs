@@ -1,0 +1,10 @@
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
