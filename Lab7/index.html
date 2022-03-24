@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      onmouseover="changeSize('horizontalLine', 80, 4)"
+      onmouseout="changeSize('horizontalLine', 100, 1)"
+    >
+      Страница
+    </div>
+    <hr id="horizontalLine" />
+    <button onclick="createForm()" id="create-form">Создать форму</button>
+    <div id="form"></div>
+    <hr id="horizontalLine" />
+    <form id="questionnaire">
+      <h3>Анкета</h3>
+      <hr id="horizontalLine" />
+      <div class="input-course">
+        <div class="input-course-label">
+          <span>Курс</span>
+        </div>
+        <div>
+          <input type="checkbox" id="course1" value="1" class="course" />
+          <label for="course1">Курс 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="course2" value="2" class="course" />
+          <label for="course2">Курс 2</label>
+        </div>
+        <div>
+          <input type="checkbox" id="course3" value="3" class="course" />
+          <label for="course3">Курс 3</label>
+        </div>
+        <div>
+          <input type="checkbox" id="course4" value="4" class="course" />
+          <label for="course4">Курс 4</label>
+        </div>
+      </div>
+      <hr id="horizontalLine" />
+      <div class="input-language">
+        <div class="input-language-label">
+          <span>Язык</span>
+        </div>
+        <select name="language">
+          <option value="en">Английский</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+      <hr id="horizontalLine" />
+      <div class="input-teacher">
+        <div class="input-teacher-label">
+          <span>Преподаватель</span>
+        </div>
+        <select name="teacher">
+          <option value="Фамилия1">Фамилия1</option>
+          <option value="Фамилия2">Фамилия2</option>
+        </select>
+      </div>
+      <hr id="horizontalLine" />
+      <div class="input-cost">
+        <div class="input-cost-label">
+          <span>Цена</span>
+        </div>
+        <select name="cost">
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </div>
+      <hr id="horizontalLine" />
+      <button type="submit">Рассчитать</button>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
