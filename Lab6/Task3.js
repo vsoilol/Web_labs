@@ -9,8 +9,6 @@ const mas = [
   ["h", "q", "R", "M", 16, "M"],
 ];
 
-const mas1 = ["dsf", 3, "af", 5];
-
 console.table(mas);
 
 const numberArray = [];
